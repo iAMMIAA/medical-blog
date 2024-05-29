@@ -123,7 +123,7 @@ function App() {
   }
 
   const navigate = useNavigate();
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const logIn = async (formData) => {
     try {
         const response = await axios.post('https://server-medical-blog.vercel.app/login', formData);
