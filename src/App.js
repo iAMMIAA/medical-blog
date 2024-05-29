@@ -123,7 +123,7 @@ function App() {
   }
 
   const navigate = useNavigate();
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const logIn = async (formData) => {
     try {
         const response = await axios.post('http://localhost:3001/login', formData);
