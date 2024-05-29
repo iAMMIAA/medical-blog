@@ -37,7 +37,7 @@ function Setting() {
   const handleConfirmDelete = (event) => {
     console.log('Confirmed account deletion');
     event.preventDefault();
-    axios.delete(`http://localhost:3001/deleteAccount`, { data: { useremail: updateFormProfile.email } })
+    axios.delete(`https://server-medical-blog.vercel.app/deleteAccount`, { data: { useremail: updateFormProfile.email } })
           .then(response => {
             console.log('Response: ', response.data);
             setOpenStateEdit(false);

@@ -19,7 +19,7 @@ function Paper() {
         };
 
         // Gửi dữ liệu lên server sử dụng phương thức POST
-        axios.post('http://localhost:3001/posts', postData)
+        axios.post('hhttps://server-medical-blog.vercel.app/posts', postData)
             .then(response => {
                 console.log('Data sent successfully:', response.data);
                 // Xử lý phản hồi từ server nếu cần

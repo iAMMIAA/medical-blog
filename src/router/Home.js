@@ -26,7 +26,7 @@ function Home(props) {
     const { darkMode, setDarkMode } = useDarkMode();
 
     const open_related_post_Benh = () =>{
-        axios.get(`http://localhost:3001/related_post/Bệnh`)
+        axios.get(`https://server-medical-blog.vercel.app/related_post/Bệnh`)
             .then(response => {
                 const data = response.data;
                 setDailyPost(data);
@@ -34,21 +34,21 @@ function Home(props) {
     }
 
     const open_related_post_Chăm_sóc_sức_khỏe = () =>{
-        axios.get(`http://localhost:3001/related_post/Chăm_sóc_sức_khỏe`)
+        axios.get(`https://server-medical-blog.vercel.app/related_post/Chăm_sóc_sức_khỏe`)
             .then(response => {
                 const data = response.data;
                 setDailyPost(data);
             })
     }
     const open_related_post_Thuốc = () =>{
-        axios.get(`http://localhost:3001/related_post/Thuốc`)
+        axios.get(`https://server-medical-blog.vercel.app/related_post/Thuốc`)
             .then(response => {
                 const data = response.data;
                 setDailyPost(data);
             })
     }
     const open_related_post_Vitamin = () =>{
-        axios.get(`http://localhost:3001/related_post/Vitamin`)
+        axios.get(`https://server-medical-blog.vercel.app/related_post/Vitamin`)
             .then(response => {
                 const data = response.data;
                 setDailyPost(data);
@@ -59,14 +59,14 @@ function Home(props) {
         setIsOpenDropDown(!isOpenDropDown);
     }
     const arrange_dateupdate = () =>{
-        axios.get(`http://localhost:3001/arrange_dateupdate`)
+        axios.get(`https://server-medical-blog.vercel.app/arrange_dateupdate`)
             .then(response => {
                 const data = response.data;
                 setDailyPost(data);
             })
     }
     const arrange_view = () =>{
-        axios.get(`http://localhost:3001/arrange_view`)
+        axios.get(`https://server-medical-blog.vercel.app/arrange_view`)
             .then(response => {
                 const data = response.data;
                 setDailyPost(data);
@@ -75,7 +75,7 @@ function Home(props) {
     
     useEffect(() => {
         window.scrollTo(0, 0);
-        axios.get(`http://localhost:3001/top_posts`)
+        axios.get(`https://server-medical-blog.vercel.app/top_posts`)
             .then(Response => {
                 const data = Response.data;
                 if(data.length > 0) setTop4Post(data);
@@ -84,7 +84,7 @@ function Home(props) {
                 console.error("Error fetching posts: ", error);
             });
 
-        axios.get(`http://localhost:3001/posts`)
+        axios.get(`https://server-medical-blog.vercel.app/posts`)
             .then(Response => {
                 const data = Response.data;
                 if(data.length > 0) setDailyPost(data);

@@ -4,7 +4,7 @@ function sendData() {
     var author = document.querySelector('.author_post').innerText;
     var cite = document.querySelector('.cite_post').innerText;
 
-    axios.post('http://localhost:3001/posts', {
+    axios.post('https://server-medical-blog.vercel.app/posts', {
         title: title,
         author: author,
         cite_source: cite,

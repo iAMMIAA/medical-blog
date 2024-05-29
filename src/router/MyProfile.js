@@ -21,7 +21,7 @@ function MyProfile() {
   });
   
   useEffect(() => {
-    axios.get(`http://localhost:3001/user/${localStorage.getItem('idUser')}`)
+    axios.get(`https://server-medical-blog.vercel.app/user/${localStorage.getItem('idUser')}`)
         .then(response => {
           const infoUser = response.data;
           setUpdateFormProfile({
@@ -57,7 +57,7 @@ function MyProfile() {
   }
   const sendFormUpdatedProfile = (event) => {
     event.preventDefault();
-    axios.post(`http://localhost:3001/update_profile/${localStorage.getItem('idUser')}`, updateFormProfile)
+    axios.post(`https://server-medical-blog.vercel.app/update_profile/${localStorage.getItem('idUser')}`, updateFormProfile)
         .then(Response => {
           console.log('Response: ', Response.data);
           setOpenStateEdit(false);

@@ -22,19 +22,6 @@ function SignUp({openLogIn, closeSignUp, onSubmit}) {
         onSubmit(formSignUp);
     }
 
-    // const requestSignUp = () => {
-    //     axios.post('http://localhost:3001/signup', formSignUp)
-    //         .then(response => {
-    //             const message = response.data;
-    //             if(message === 'Data inserted successfully') {
-    //                 alert("Đăng ký thành công! Vui lòng đăng nhập.");
-    //                 closeSignUp();
-    //                 window.location.href = 'http://localhost:3000';
-    //             }
-    //         })
-    // }
-
-    
     return (
         <div className="signup">
             <div className='form_signup'>

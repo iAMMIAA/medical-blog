@@ -24,7 +24,7 @@ function Exchange(){
     });
     
     useEffect(() => {
-      axios.get(`http://localhost:3001/user/${localStorage.getItem('idUser')}`)
+      axios.get(`https://server-medical-blog.vercel.app/user/${localStorage.getItem('idUser')}`)
           .then(response => {
             const infoUser = response.data;
             setInforUser({

@@ -46,7 +46,7 @@ function LookUp() {
     } 
     const formData = new FormData();
     formData.append('image', selectedImage);
-    axios.post('http://localhost:3001/predict', formData)
+    axios.post('https://server-medical-blog.vercel.app/predict', formData)
       .then(Response => {
         var drug = Response.data;
         var tagDrug = drug.tagDrug;
@@ -59,7 +59,7 @@ function LookUp() {
         setImprintDrug(drug.imprintDrug);
         setDescribeDrug(drug.describeDrug);
 
-        axios.get(`http://localhost:3001/related_drug/${tagDrug}`)
+        axios.get(`https://server-medical-blog.vercel.app/related_drug/${tagDrug}`)
             .then(response => {
               setRelatedDrug(response.data);
             })

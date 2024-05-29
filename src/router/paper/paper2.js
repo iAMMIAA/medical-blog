@@ -21,7 +21,7 @@ function Paper() {
     const [fixedTableOfPaper, setFixedTableOfPaper] = useState();
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/posts/${id}`)
+        axios.get(`https://server-medical-blog.vercel.app/posts/${id}`)
             .then(response => {
                 var post = response.data;
                 var tagRelatedPost = post.tag;
@@ -31,7 +31,7 @@ function Paper() {
                 setTagPost(post.tag);
                 setDateUpdatePost(post.date_update);
 
-                axios.get(`http://localhost:3001/related_post/${tagRelatedPost}`)
+                axios.get(`https://server-medical-blog.vercel.app/related_post/${tagRelatedPost}`)
                     .then(response => {
                         // alert(`tag: ${tagRelatedPost}`);
                         const data = response.data;
