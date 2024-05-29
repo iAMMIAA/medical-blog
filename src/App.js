@@ -134,15 +134,15 @@ function App() {
             localStorage.setItem('token', token);
             localStorage.setItem('idUser', idUser);
             alert('Đăng nhập thành công');
-            window.location.href = 'https://iammiaa.github.io/medical-blog/';
+            window.location.href = 'https://iammiaa.github.io/medical-blog/#/';
             axios.defaults.headers.common.Authorization = `${token}`;
         } else {
             alert('Đăng nhập thất bại!');
-            window.location.href = 'https://iammiaa.github.io/medical-blog/';
+            window.location.href = 'https://iammiaa.github.io/medical-blog/#/';
         }
     } catch (error) {
         alert('Đăng nhập thất bại!');
-        window.location.href = 'https://iammiaa.github.io/medical-blog/';
+        window.location.href = 'https://iammiaa.github.io/medical-blog/#/';
         console.error("Error while fetching result: ", error);
     }
   };
@@ -154,12 +154,12 @@ function App() {
             if(message === 'Success') {
                 alert("Đăng ký thành công! Vui lòng đăng nhập.");
                 setShowSignUp(false);
-                window.location.href = 'https://iammiaa.github.io/medical-blog/';
+                window.location.href = 'https://iammiaa.github.io/medical-blog/#/';
             }
         })
         .catch(error => {
           alert('Đăng ký thất bại!');
-          window.location.href = 'https://iammiaa.github.io/medical-blog/';
+          window.location.href = 'https://iammiaa.github.io/medical-blog/#/';
           console.error("Error while fetching result: ", error);
         });
   }
@@ -168,7 +168,7 @@ function App() {
     localStorage.removeItem('token');
     localStorage.removeItem('idUser');
     // Tải lại trang
-    window.location.href = 'https://iammiaa.github.io/medical-blog/';
+    window.location.href = 'https://iammiaa.github.io/medical-blog/#/';
   }
 
   const [openSeeNotification, setOpenSeeNotification] = useState(false);
