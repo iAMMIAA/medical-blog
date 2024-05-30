@@ -126,7 +126,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const logIn = async (formData) => {
     try {
-        const response = await axios.post('http://localhost:3001/login', formData);
+        const response = await axios.post('https://server-medical-blog.vercel.app/login', formData);
         const { message, token, idUser } = response.data;
 
         if (message === 'Success' && token) {
@@ -134,35 +134,35 @@ function App() {
             localStorage.setItem('token', token);
             localStorage.setItem('idUser', idUser);
             alert('Đăng nhập thành công');
-            window.location.href = 'http://localhost:3000';
+            window.location.href = 'https://iammiaa.github.io/medical-blog/';
             axios.defaults.headers.common.Authorization = `${token}`;
         } else {
             alert('Đăng nhập thất bại!');
-            window.location.href = 'http://localhost:3000';
+            window.location.href = 'https://iammiaa.github.io/medical-blog/';
         }
     } catch (error) {
         alert('Đăng nhập thất bại!');
-        window.location.href = 'http://localhost:3000';
+        window.location.href = 'https://iammiaa.github.io/medical-blog/';
         console.error("Error while fetching result: ", error);
     }
   };
 
   const requestSignUp = async (formSignUp) => {
     try{
-        const response = await axios.post('http://localhost:3001/signup', formSignUp)
+        const response = await axios.post('https://server-medical-blog.vercel.app/signup', formSignUp)
         const { message } = response.data;
         
         if(message === 'Success') {
             alert("Đăng ký thành công! Vui lòng đăng nhập lại.");
             setShowSignUp(false);
-            window.location.href = 'http://localhost:3000';
+            window.location.href = 'https://iammiaa.github.io/medical-blog/';
         } else if(message === 'Existed') {
             alert('Tên người dùng hoặc email đã tồn tại!');
-            window.location.href = 'http://localhost:3000';
+            window.location.href = 'https://iammiaa.github.io/medical-blog/';
         }
     } catch (error) {
       alert('Tên người dùng hoặc email đã tồn tại!');
-      window.location.href = 'http://localhost:3000';
+      window.location.href = 'https://iammiaa.github.io/medical-blog/';
     }
   };
 
