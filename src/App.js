@@ -141,7 +141,7 @@ function App() {
             window.location.href = 'https://iammiaa.github.io/medical-blog/';
         }
     } catch (error) {
-        alert('Đăng nhập thất bại!');
+        alert('Bạn đã đăng nhập thất bại!');
         window.location.href = 'https://iammiaa.github.io/medical-blog/';
         console.error("Error while fetching result: ", error);
     }

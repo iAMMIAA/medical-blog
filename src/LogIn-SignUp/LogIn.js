@@ -26,7 +26,7 @@ function LogIn({closeLogIn, openSignUp, onSubmit}){
                 <div className="close_login_form" style={{alignItems: "flex-end"}}>
                     <FontAwesomeIcon onClick={closeLogIn} icon={faClose} style={{ color: 'rgb(70, 90, 110)', fontSize: '20px' }} />
                 </div>
-                <form onClick={handleLogIn}>
+                <form onSubmit={handleLogIn}>
                     <div className='mb-3'>
                         <label htmlFor='email'>Username</label>
                         <input onChange={setInput} placeholder='Enter Email' name='username' className='form-control rounded-0'/>
