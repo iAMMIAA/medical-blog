@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/medical-blog/static/css/main.f86e91e1.css",
-    "main.js": "/medical-blog/static/js/main.08893269.js",
+    "main.js": "/medical-blog/static/js/main.191a4294.js",
     "static/js/453.258b012d.chunk.js": "/medical-blog/static/js/453.258b012d.chunk.js",
     "static/media/drug10.png": "/medical-blog/static/media/drug10.34d6eed21be128627d72.png",
     "static/media/drug11.png": "/medical-blog/static/media/drug11.2c8e01acbffd408bd2f9.png",
@@ -14,11 +14,11 @@
     "static/media/drug2.png": "/medical-blog/static/media/drug2.9443a4580d0b99d30409.png",
     "index.html": "/medical-blog/index.html",
     "main.f86e91e1.css.map": "/medical-blog/static/css/main.f86e91e1.css.map",
-    "main.08893269.js.map": "/medical-blog/static/js/main.08893269.js.map",
+    "main.191a4294.js.map": "/medical-blog/static/js/main.191a4294.js.map",
     "453.258b012d.chunk.js.map": "/medical-blog/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f86e91e1.css",
-    "static/js/main.08893269.js"
+    "static/js/main.191a4294.js"
   ]
 }
