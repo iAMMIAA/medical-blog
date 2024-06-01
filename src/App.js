@@ -104,19 +104,19 @@ function App() {
   useEffect(() => {
     const pathname = window.location.pathname;
     switch (pathname) {
-      case '/':
+      case '':
         openHome();
         break;
-      case '/exchange':
+      case 'exchange':
         openExchange();
         break;
-      case '/lookup':
+      case 'lookup':
         openLookUp();
         break;
-      case '/setting_profile':
+      case 'setting_profile':
         openSetting();
         break;
-      case '/write_paper':
+      case 'write_paper':
         openWritePaper();
         break;
       default:
