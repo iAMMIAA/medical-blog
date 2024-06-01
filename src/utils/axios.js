@@ -8,7 +8,7 @@ import { HOST_API } from '../config';
 // const axiosInstance = axios.create({ baseURL: HOST_API });
 // Tạo một instance mới của axios
 const axiosInstance = axios.create({
-  baseURL: 'https://server-medical-blog.vercel.app', // URL cơ bản của API
+  baseURL: 'https://server-medical-blog.vercel.app/', // URL cơ bản của API
   headers: {
     'Content-Type': 'application/json',
   },
