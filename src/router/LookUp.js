@@ -98,7 +98,6 @@ function LookUp() {
                         <p></p>
                         <p><em>"{describeDrug}"</em></p>
                     </div>
-                    {/* <p className='detail_drug' dangerouslySetInnerHTML={{ __html: detailDrug }}></p> */}
                     <div className='information_source'>
                       <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/12/28/ceef2be96f71c72f9e60-1703752254941963328669.jpg"/>
                       <p><span> Medically reviewed by <strong>{sourceInfo}</strong>.</span></p>
@@ -121,14 +120,10 @@ function LookUp() {
                         <img  alt="Drug" src='https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/12/28/ceef2be96f71c72f9e60-1703752254941963328669.jpg'/>
                         <p>Ảnh người dùng đăng tải</p>
                       </div>
-                      {/* {selectedImage && 
-                        <img className='drugImage' alt="Drug" src={URL.createObjectURL(selectedImage)}/>
-                      } */}
                     </div>
                     <div className='related_drug'>
                       <p><strong>Các bài viết liên quan thuốc:</strong></p>
                       <ul>
-                          {/* <li></li> */}
                         {relatedDrug.map(post => (
                           <li>{post.title}</li>
                         ))}
